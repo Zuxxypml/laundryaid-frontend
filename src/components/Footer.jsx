@@ -51,9 +51,18 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3 text-[#c85f0b]">Services</h4>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li>Wash & Fold</li>
-            <li>Premium</li>
-            <li>Deluxe</li>
+            <li>
+              {" "}
+              <Link to={"/request"}>Wash & Fold</Link>
+            </li>
+            <li>
+              {" "}
+              <Link to={"/request"}>Premium</Link>
+            </li>{" "}
+            <li>
+              {" "}
+              <Link to={"/request"}>Deluxe</Link>
+            </li>
           </ul>
         </div>
 
