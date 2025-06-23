@@ -22,25 +22,31 @@ const services = [
 
 function Services() {
   return (
-    <section className='bg-white flex flex-col justify-center gap-8 px-10 md:px-30 py-10 font-poppins'>
-    <h2 className="font-semibold">Our Services</h2>
-    <div className='flex flex-col md:flex-row gap-4'>
-      {services.map((items, index) => (
-        <div className='flex flex-col flex-1 gap-3 pb-3 font-poppins' key={index}>
+    <section className="bg-white flex flex-col justify-center gap-8 px-10 md:px-30 py-10 font-poppins">
+      <h2 className="font-semibold text-[#127733] text-3xl text-center">
+        Our Services
+      </h2>
+      <div className="flex flex-col md:flex-row gap-4">
+        {services.map((items, index) => (
           <div
-            className='w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl'
-            style={{ backgroundImage: `url(${items.image})` }}></div>
-          <div>
-            <p className='text-[#0e141b] text-base font-semibold leading-normal'>
-              {items.tiltle}
-            </p>
-            <p className='text-[#0e141b] text-sm font-normal text-gray-500 leading-normal'>
-              {items.description}
-            </p>
+            className="flex flex-col flex-1 gap-3 pb-3 font-poppins"
+            key={index}
+          >
+            <div
+              className="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+              style={{ backgroundImage: `url(${items.image})` }}
+            ></div>
+            <div>
+              <p className="text-[#fb8c3b] text-base font-semibold leading-normal">
+                {items.tiltle}
+              </p>
+              <p className="text-[#fb8c3b] text-sm font-normal text-gray-500 leading-normal">
+                {items.description}
+              </p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </section>
   );
 }
