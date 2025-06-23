@@ -24,7 +24,9 @@ function Layout() {
     <div className="relative min-h-screen flex flex-col">
       <Navbar scrolled={scrolled} />
       <div ref={triggerRef} className="flex-1 bg-[#e7f1ea]"></div>
-      <Outlet />
+      <div className="md:mt-10">
+        <Outlet />
+      </div>
       <Footer />
       {scrolled ? <DiscountButton /> : null}
     </div>

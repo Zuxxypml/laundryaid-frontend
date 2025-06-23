@@ -3,7 +3,7 @@ import PickUpInput from "./PickUpInput";
 
 function Header() {
   return (
-    <div className="flex flex-col sm:flex-row justify-between items-center pt-16 md:px-16 font-poppins bg-gradient-to-b sm:bg-gradient-to-r from-[#CFE3D6] via-[#a7cdb7] to-[#7cbf9e]">
+    <div className="flex flex-col sm:flex-row justify-between items-center pt-26 md:pt-16 px-16 font-poppins bg-gradient-to-b sm:bg-gradient-to-r from-[#CFE3D6] via-[#a7cdb7] to-[#7cbf9e]">
       {/* <img
     className="absolute top-0 left-0 w-full h-full object-cover"
     src="/videos/hero1.gif"
@@ -15,7 +15,7 @@ function Header() {
 
       {/* Overlay */}
       {/* <div className="absolute inset-0 bg-black/50"></div> */}
-      <div className="md:w-1/2 flex flex-col gap-4 sm:gap-6 px-7 md:px-0 pt-3 md:pt-0 mt-10">
+      <div className="md:w-1/2 flex flex-col gap-4 sm:gap-6 px-7 md:px-0 pt-3 md:pt-0">
         <h1 className="font-bold text-4xl sm:text-4xl md:text-6xl text-center sm:text-left">
           Less Time on Laundry, More Time for What Matters
         </h1>
