@@ -15,7 +15,7 @@ const services = [
   },
   {
     image: "./dry-cleaning-laundryaid.jpg",
-    tiltle: "Dry Cleaning",
+    tiltle: "We Dry Clean",
     description: "Expert dry cleaning for your delicate and special garments",
   },
 ];

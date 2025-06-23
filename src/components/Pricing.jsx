@@ -74,6 +74,7 @@ function Pricing() {
 
             <div className="flex flex-row">
               <Link
+                to={"/request"}
                 className={`p-2 text-center w-full rounded-lg ${
                   index !== 1
                     ? "border-2 border-gray-300 bg-white text-gray-700"
