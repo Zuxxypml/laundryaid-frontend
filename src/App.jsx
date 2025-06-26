@@ -1,27 +1,33 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
+
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Auth from "./pages/Auth";
 import NoPage from "./pages/NoPage";
-import './App.css'
-import Request from './pages/Request';
-
+import MainLayout from "./components/layouts/MainLayout";
+import DashboardLayout from "./components/layouts/DashboardLayout";
+import Dashboard from "./pages/Dashboard";
+import AdminDashboard from "./pages/AdminDashboard";
 function App() {
-  
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout />}>
+        {/* Main website layout */}
+        <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path='contact' element={<Contact />} />
-          <Route path='request' element={<Request/>} />
-          <Route path='*' element={<NoPage />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="auth" element={<Auth />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+
+        {/* Clean dashboard layout (no navbar/footer/gradient) */}
+        <Route element={<DashboardLayout />}>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/admin" element={<AdminDashboard />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default App
+export default App;
