@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import DiscountButton from "../components/DiscountButton";
+import DiscountButton from "../DiscountButton";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
 
-function Layout() {
+function MainLayout() {
   const [scrolled, setScrolled] = useState(false);
   const triggerRef = useRef(null);
   const location = useLocation();
@@ -51,4 +51,4 @@ function Layout() {
   );
 }
 
-export default Layout;
+export default MainLayout;
