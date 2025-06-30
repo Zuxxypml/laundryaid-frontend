@@ -3,7 +3,7 @@ import PickUpInput from "./PickUpInput";
 
 function Header() {
   return (
-    <div className="min-h-screen flex flex-col sm:flex-row justify-between items-center pt-24 px-6 sm:px-10 md:px-16 font-poppins bg-gradient-to-b sm:bg-gradient-to-r from-[#CFE3D6] via-[#a7cdb7] to-[#7cbf9e]">
+    <div className="min-h-screen flex flex-col sm:flex-row justify-between items-center px-6 sm:px-10 md:px-16 font-poppins bg-gradient-to-b sm:bg-gradient-to-r from-[#CFE3D6] via-[#a7cdb7] to-[#7cbf9e]">
       {/* Left Side */}
       <div className="md:w-1/2 flex flex-col gap-4 sm:gap-6 pt-6 sm:pt-3">
         <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl text-center sm:text-left leading-tight">
@@ -32,11 +32,11 @@ function Header() {
       </div>
 
       {/* Right Side */}
-      <div className="md:w-1/2 flex justify-center sm:justify-end mt-10 sm:mt-0">
+      <div className="md:w-1/2 flex justify-center sm:justify-end sm:mt-0">
         <img
           src="/hero-image.png"
           alt="Laundry Hero"
-          className="max-w-[300px] sm:max-w-[350px] md:max-w-[400px] object-cover"
+          className="  object-cover"
         />
       </div>
     </div>
@@ -44,3 +44,8 @@ function Header() {
 }
 
 export default Header;
+
+// max-w-[300px]
+// sm:max-w-[350px] md:max-w-[400px]
+// mt-10
+// p-24

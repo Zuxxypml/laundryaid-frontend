@@ -12,6 +12,6 @@ export default defineConfig({
     }},
     server: {
     host: true, // or use your IP like '192.168.0.101'
-    port: 5173, // optional, default Vite port
+    port: 5174, // optional, default Vite port
   },
 })
